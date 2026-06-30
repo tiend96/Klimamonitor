@@ -15,6 +15,7 @@ Only `online`, `preorder` and `store_only` count as "obtainable".
 
 from __future__ import annotations
 
+import html as _html
 import json
 import re
 from dataclasses import dataclass, field
@@ -57,6 +58,7 @@ class SourceResult:
     currency: str = "EUR"
     note: str = ""                   # short human-readable detail
     error: str = ""                  # set when the fetch/parse failed
+    deals: list = field(default_factory=list)  # community deal posts (Mydealz)
 
     @property
     def obtainable(self) -> bool:
@@ -225,6 +227,57 @@ def parse_geizhals(result: SourceResult, html: str) -> SourceResult:
     return result
 
 
+# --------------------------------------------------------------------------- #
+# Parser: Mydealz community deal feed (search results page)
+# Returns a list of deal posts; the monitor alerts on NEW active ones.
+# Optional spec keys:  match  = regex the deal title must contain
+#                      exclude = regex that disqualifies a deal title
+# --------------------------------------------------------------------------- #
+def fetch_mydealz(result: SourceResult, spec: dict, timeout: int) -> SourceResult:
+    r = _get(result.url, timeout)
+    low = r.text[:4000].lower()
+    if r.status_code != 200 or any(s in low for s in
+                                   ("just a moment", "cf-chl", "attention required")):
+        result.error = f"blocked (HTTP {r.status_code})"
+        return result
+
+    mre = re.compile(spec["match"], re.I) if spec.get("match") else None
+    xre = re.compile(spec["exclude"], re.I) if spec.get("exclude") else None
+
+    deals, seen = [], set()
+    for a in re.findall(r"<article\b(.*?)</article>", r.text, re.S):
+        lm = re.search(r'href="(?:https://www\.mydealz\.de)?(/deals/[^"#?]+)"', a)
+        tm = re.search(r'class="[^"]*thread-title[^"]*"[^>]*>(.*?)</a>', a, re.S)
+        if not lm or not tm:
+            continue
+        path = lm.group(1)
+        if path in seen:
+            continue
+        title = _html.unescape(re.sub(r"<[^>]+>", "", tm.group(1))).strip()
+        if (mre and not mre.search(title)) or (xre and xre.search(title)):
+            continue
+        seen.add(path)
+        pm = re.search(r'class="[^"]*thread-price[^"]*"[^>]*>(.*?)</span>', a, re.S)
+        ptxt = _html.unescape(re.sub(r"<[^>]+>", "", pm.group(1))) if pm else ""
+        pnum = (re.search(r"(\d[\d.]*,\d{2}|\d[\d.]+|\d+)", ptxt)
+                or re.search(r"(?:für|fuer|nur|ab)\s*(\d[\d.]*(?:,\d{2})?)\s*€", title, re.I)
+                or re.search(r"(\d[\d.]*(?:,\d{2})?)\s*€", title))
+        deals.append({
+            "id": path,
+            "title": title[:120],
+            "price": _to_price(pnum.group(1)) if pnum else None,
+            "url": "https://www.mydealz.de" + path,
+            "expired": "thread--expired" in a,
+        })
+
+    deals.sort(key=lambda d: d["expired"])          # active first
+    result.deals = deals[:25]
+    active = [d for d in result.deals if not d["expired"]]
+    result.status = "online" if active else "out"
+    result.note = f"{len(active)} aktive Deals" if active else "keine aktiven Deals"
+    return result
+
+
 PARSERS = {
     "jsonld": parse_jsonld,
     "geizhals": parse_geizhals,
@@ -238,6 +291,8 @@ def check_source(spec: dict, timeout: int = 25) -> SourceResult:
     try:
         if stype == "shopify":
             return fetch_shopify(result, timeout)
+        if stype == "mydealz":
+            return fetch_mydealz(result, spec, timeout)
         r = _get(result.url, timeout)
         if _looks_blocked(r.text, r.status_code):
             result.error = f"blocked (HTTP {r.status_code})"

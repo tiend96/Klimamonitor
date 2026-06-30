@@ -44,6 +44,13 @@ products:
         label: "BAUHAUS"
         url: "https://www.bauhaus.info/klimaanlagen/midea-klimasplitgeraet-portasplit-12000-btu/p/31934233"
         optional: true
+      # Community deal feed: pings you when a NEW active Mydealz deal is posted.
+      # match = title must contain it; exclude = drop smaller-BTU variants.
+      - type: mydealz
+        label: "Mydealz"
+        url: "https://www.mydealz.de/search?q=Midea%20PortaSplit"
+        match: "portasplit"
+        exclude: "8[.\\s]?0?00|8k|2[,.]35|2[,.]3\\s*kw|7[.\\s]?0?00|9[.\\s]?0?00|10[.\\s]?0?00"
 
   - name: "Be Cool BCPSK12KW (12.000 BTU, WiFi)"
     target_price: 700
@@ -58,3 +65,8 @@ products:
       - type: geizhals
         label: "heise/Geizhals (alle Shops)"
         url: "https://preisvergleich.heise.de/be-cool-mobile-split-klimaanlage-12-000btu-und-wifi-bcpsk12kw-a3519557.html"
+      - type: mydealz
+        label: "Mydealz"
+        url: "https://www.mydealz.de/search?q=Be%20Cool%20BCPSK12KW"
+        match: "be\\s*cool"
+        exclude: "bc5|9[.\\s]?0?00|7[.\\s]?0?00|2[,.]6"

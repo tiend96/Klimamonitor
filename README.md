@@ -115,7 +115,10 @@ Everything lives in [`config.yaml`](config.yaml):
 - **Add another shop** — copy a source block and set:
   - `type: jsonld` for a normal shop product page (works for most German shops),
   - `type: shopify` for a Shopify store,
-  - `type: geizhals` for a Geizhals/heise Preisvergleich page.
+  - `type: geizhals` for a Geizhals/heise Preisvergleich page,
+  - `type: mydealz` for a Mydealz community search (pings you with 🔥 when a
+    **new active deal** is posted; supports optional `match`/`exclude` regexes
+    on the deal title to keep it to the right model/size).
 - **Check more/less often** — edit the `cron` in
   [`.github/workflows/check.yml`](.github/workflows/check.yml)
   (`*/30 * * * *` = every 30 min; `*/15 * * * *` = every 15 min).

@@ -71,7 +71,11 @@ def evaluate_product(product: dict, timeout: int) -> dict:
     def plausible(r) -> bool:
         return not (r.price is not None and floor is not None and r.price < floor)
 
-    results = [check_source(s, timeout) for s in product["sources"]]
+    # Mydealz "deal feeds" are tracked separately from the price/stock aggregate.
+    price_specs = [s for s in product["sources"] if s.get("type") != "mydealz"]
+    feed_specs = [s for s in product["sources"] if s.get("type") == "mydealz"]
+
+    results = [check_source(s, timeout) for s in price_specs]
     obtainable = [r for r in results if r.obtainable and plausible(r)]
     priced = [r for r in obtainable if r.price is not None]
 
@@ -105,6 +109,22 @@ def evaluate_product(product: dict, timeout: int) -> dict:
             for r in results
         },
     }
+
+    # community deal feeds (Mydealz)
+    if feed_specs:
+        deals, seen, feed_info = [], set(), []
+        for spec in feed_specs:
+            fr = check_source(spec, timeout)
+            active = [d for d in fr.deals if not d["expired"]]
+            feed_info.append({"label": fr.label, "error": fr.error, "active": len(active)})
+            for d in fr.deals:
+                if d["id"] not in seen:
+                    seen.add(d["id"])
+                    deals.append(d)
+        deals.sort(key=lambda d: d["expired"])      # active first
+        snapshot["deals"] = deals[:25]
+        snapshot["deal_feeds"] = feed_info
+
     return snapshot
 
 
@@ -147,6 +167,13 @@ def diff_events(name: str, prev: dict | None, now: dict, target_price) -> list[s
             events.append(f"🎯 Unter Zielpreis ({fmt_price(target_price)}): "
                           f"jetzt {fmt_price(now_price)} ({now['best_source']})")
 
+    # NEW community deal posted (Mydealz) -> alert on active, not-seen-before deals
+    prev_ids = {d["id"] for d in prev.get("deals", [])}
+    for d in now.get("deals", []):
+        if not d["expired"] and d["id"] not in prev_ids:
+            price = f" für {fmt_price(d['price'])}" if d["price"] else ""
+            events.append(f"🔥 Neuer Mydealz-Deal{price}: {d['title']}\n   {d['url']}")
+
     return events
 
 
@@ -170,6 +197,19 @@ def product_report(name: str, snap: dict) -> str:
         if info.get("url"):
             line += f"\n      {info['url']}"
         lines.append(line)
+
+    if "deal_feeds" in snap:
+        errs = [f["error"] for f in snap["deal_feeds"] if f["error"]]
+        active = [d for d in snap.get("deals", []) if not d["expired"]]
+        if errs:
+            lines.append(f"    - Mydealz: ⚠ {errs[0]}")
+        elif active:
+            lines.append("    - Mydealz (aktive Community-Deals):")
+            for d in active[:5]:
+                p = f" – {fmt_price(d['price'])}" if d["price"] else ""
+                lines.append(f"      🔥 {d['title']}{p}\n         {d['url']}")
+        else:
+            lines.append("    - Mydealz: keine aktiven Deals")
     return "\n".join(lines)
 
 
