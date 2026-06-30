@@ -68,8 +68,10 @@ def evaluate_product(product: dict, timeout: int) -> dict:
     obtainable = [r for r in results if r.obtainable]
     priced = [r for r in obtainable if r.price is not None]
 
-    best_price = min((r.price for r in priced), default=None)
-    best_source = min(priced, key=lambda r: r.price).label if priced else None
+    best = min(priced, key=lambda r: r.price) if priced else None
+    best_price = best.price if best else None
+    best_source = best.label if best else None
+    best_url = best.url if best else None
     sellers = len(obtainable)
 
     # overall status = the best status any source reports
@@ -80,6 +82,8 @@ def evaluate_product(product: dict, timeout: int) -> dict:
         "status": status,
         "best_price": best_price,
         "best_source": best_source,
+        "best_url": best_url,
+        "primary_url": results[0].url if results else None,
         "sellers": sellers,
         "sources": {
             r.label: {
@@ -87,11 +91,17 @@ def evaluate_product(product: dict, timeout: int) -> dict:
                 "price": r.price,
                 "note": r.note,
                 "error": r.error,
+                "url": r.url,
             }
             for r in results
         },
     }
     return snapshot
+
+
+def click_link(snap: dict) -> str:
+    """Best single URL to open from a notification for this product."""
+    return snap.get("best_url") or snap.get("primary_url") or ""
 
 
 def diff_events(name: str, prev: dict | None, now: dict, target_price) -> list[str]:
@@ -145,7 +155,10 @@ def product_report(name: str, snap: dict) -> str:
             bits.append(info["note"])
         if info["error"]:
             bits.append(f"⚠ {info['error']}")
-        lines.append(f"    - {label}: {', '.join(bits)}")
+        line = f"    - {label}: {', '.join(bits)}"
+        if info.get("url"):
+            line += f"\n      {info['url']}"
+        lines.append(line)
     return "\n".join(lines)
 
 
@@ -181,6 +194,7 @@ def main() -> int:
     new_state: dict = {}
     all_events: list[str] = []
     reports: list[str] = []
+    click_url = ""
 
     for product in config["products"]:
         name = product["name"]
@@ -194,7 +208,14 @@ def main() -> int:
 
         events = diff_events(name, prev_state.get(name), snap, target)
         if events:
-            all_events.append(f"### {name}\n" + "\n".join(events) + "\n\n" + report)
+            link = click_link(snap)
+            if link and not click_url:
+                click_url = link          # whole-notification tap target
+            block = f"### {name}\n" + "\n".join(events)
+            if link:
+                block += f"\n👉 Direkt zum Angebot: {link}"
+            block += "\n\n" + report
+            all_events.append(block)
 
     save_state(new_state)
 
@@ -203,20 +224,22 @@ def main() -> int:
 
     # Decide what (if anything) to send
     if all_events:
-        body = "\n\n".join(all_events)
-        body += "\n\n(Automatischer Klima-Monitor)"
+        body = "\n\n".join(all_events) + "\n\n(Automatischer Klima-Monitor)"
         notify.notify("🔔 Klima-Monitor: Änderung erkannt!", body,
-                      priority="high", tags="rotating_light")
+                      priority="high", tags="rotating_light", click=click_url)
     elif first_run:
         body = ("Monitor ist aktiv. Aktueller Stand:\n\n"
                 + "\n\n".join(reports)
                 + "\n\nDu wirst benachrichtigt, sobald sich Preis oder "
                   "Verfügbarkeit ändern.")
+        first = next(iter(new_state.values()), {})
         notify.notify("✅ Klima-Monitor gestartet", body,
-                      priority="default", tags="white_check_mark")
+                      priority="default", tags="white_check_mark",
+                      click=click_link(first))
     elif args.summary:
+        first = next(iter(new_state.values()), {})
         notify.notify("📋 Klima-Monitor: Status", "\n\n".join(reports),
-                      priority="low", tags="clipboard")
+                      priority="low", tags="clipboard", click=click_link(first))
     else:
         print("No changes - no notification sent.")
 
