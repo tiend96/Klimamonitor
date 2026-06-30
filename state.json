@@ -89,17 +89,17 @@
       },
       {
         "expired": true,
-        "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
-        "price": null,
-        "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
-      },
-      {
-        "expired": true,
         "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
         "price": null,
         "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
         "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
+        "price": null,
+        "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
       },
       {
         "expired": true,
@@ -205,13 +205,6 @@
         "price": null,
         "title": "Lokal Hornbach Raum Frankfurt, Darmstadt - Klimasplitgerät Midea PortaSplit 3,5 kW",
         "url": "https://www.mydealz.de/deals/lokal-hornbach-midea-portasplit-35-kw-2786114"
-      },
-      {
-        "expired": true,
-        "id": "/deals/toom-lokal-midea-portasplit-35-kw-12000-btu-mobile-split-klimaanlage-selbstabholer-2784392",
-        "price": 668.77,
-        "title": "[Toom Lokal] Midea PortaSplit 3,5 kW / 12.000 BTU mobile Split-Klimaanlage / Selbstabholer / 668,77€ Effektivpreis mit C",
-        "url": "https://www.mydealz.de/deals/toom-lokal-midea-portasplit-35-kw-12000-btu-mobile-split-klimaanlage-selbstabholer-2784392"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
