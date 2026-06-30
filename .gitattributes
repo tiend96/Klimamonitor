@@ -1,0 +1,2 @@
+# Store text as LF so the Linux GitHub Actions runner gets clean scripts
+* text=auto eol=lf

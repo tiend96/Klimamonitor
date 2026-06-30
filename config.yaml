@@ -1,0 +1,59 @@
+# =============================================================================
+#  Klima-Monitor configuration
+#
+#  Each product has a list of `sources`. The monitor checks them all and reports
+#  the LOWEST obtainable price plus how many shops currently sell it.
+#
+#  source types:
+#    jsonld    -> a normal shop product page that embeds schema.org data
+#                 (works for OBI, bestell.bar, werkzeugbedarf and most shops)
+#    shopify   -> a Shopify store product page (reads the clean .js JSON)
+#    geizhals  -> a Geizhals / heise Preisvergleich page (aggregates ALL shops;
+#                 tells us reliably whether ANY shop has it in stock)
+#
+#  To add another shop: copy a source block, set `type` + `label` + `url`.
+#  Sites that often block bots (idealo, Bauhaus, Amazon, Geizhals direct) are
+#  marked `optional: true` -- if they block, they are skipped, never counted as
+#  "out of stock".
+# =============================================================================
+
+check:
+  timeout: 25
+
+products:
+  - name: "Midea PortaSplit 12.000 BTU (3,5 kW)"
+    # You get an alert when an obtainable price drops to/below this (EUR).
+    # Remove the line to be alerted on ANY availability/price change.
+    target_price: 1000
+    sources:
+      - type: shopify
+        label: "tado Shop"
+        url: "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw"
+      - type: geizhals
+        label: "heise/Geizhals (alle Shops)"
+        # NOTE: verify this listing is the 12.000 BTU / 3,5 kW variant.
+        url: "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
+      - type: jsonld
+        label: "idealo"
+        url: "https://www.idealo.de/preisvergleich/OffersOfProduct/204374464_-portasplit-3-5-kw-midea.html"
+        optional: true
+      - type: jsonld
+        label: "BAUHAUS"
+        url: "https://www.bauhaus.info/klimaanlagen/midea-klimasplitgeraet-portasplit-12000-btu/p/31934233"
+        optional: true
+
+  - name: "Be Cool BCPSK12KW (12.000 BTU, WiFi)"
+    target_price: 700
+    sources:
+      - type: jsonld
+        label: "OBI"
+        url: "https://www.obi.de/p/5152491/be-cool-mobiles-split-klimageraet-bcpsk12kw-mit-wifi-funktion"
+      - type: jsonld
+        label: "bestell.bar"
+        url: "https://www.bestell.bar/p/klJi/be-cool-mobiles-split-klimagerat-bcpsk12kw"
+      - type: jsonld
+        label: "werkzeugbedarf.com"
+        url: "https://www.werkzeugbedarf.com/product/be-cool-mobiles-split-klimageraet-bcpsk12kw-mit-wifi-funktion/"
+      - type: geizhals
+        label: "heise/Geizhals (alle Shops)"
+        url: "https://preisvergleich.heise.de/be-cool-mobile-split-klimaanlage-12-000btu-und-wifi-bcpsk12kw-a3519557.html"
