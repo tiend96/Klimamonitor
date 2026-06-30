@@ -64,8 +64,15 @@ def fmt_price(p) -> str:
 
 def evaluate_product(product: dict, timeout: int) -> dict:
     """Check every source and aggregate into one product snapshot."""
+    # prices below this floor are treated as bogus (typo / bait listing):
+    # shown to you, but ignored for "cheapest price" and alerts.
+    floor = product.get("min_price")
+
+    def plausible(r) -> bool:
+        return not (r.price is not None and floor is not None and r.price < floor)
+
     results = [check_source(s, timeout) for s in product["sources"]]
-    obtainable = [r for r in results if r.obtainable]
+    obtainable = [r for r in results if r.obtainable and plausible(r)]
     priced = [r for r in obtainable if r.price is not None]
 
     best = min(priced, key=lambda r: r.price) if priced else None
@@ -74,9 +81,10 @@ def evaluate_product(product: dict, timeout: int) -> dict:
     best_url = best.url if best else None
     sellers = len(obtainable)
 
-    # overall status = the best status any source reports
+    # overall status = the best status any plausible source reports
     rank = {"online": 3, "preorder": 2, "store_only": 1, "out": 0, "unknown": -1}
-    status = max((r.status for r in results), key=lambda s: rank[s], default="unknown")
+    status = max((r.status for r in results if plausible(r)),
+                 key=lambda s: rank[s], default="unknown")
 
     snapshot = {
         "status": status,
@@ -92,6 +100,7 @@ def evaluate_product(product: dict, timeout: int) -> dict:
                 "note": r.note,
                 "error": r.error,
                 "url": r.url,
+                "implausible": not plausible(r),
             }
             for r in results
         },
@@ -155,6 +164,8 @@ def product_report(name: str, snap: dict) -> str:
             bits.append(info["note"])
         if info["error"]:
             bits.append(f"⚠ {info['error']}")
+        if info.get("implausible"):
+            bits.append("⚠ Preis unplausibel – ignoriert")
         line = f"    - {label}: {', '.join(bits)}"
         if info.get("url"):
             line += f"\n      {info['url']}"

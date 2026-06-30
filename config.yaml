@@ -25,6 +25,9 @@ products:
     # You get an alert when an obtainable price drops to/below this (EUR).
     # Remove the line to be alerted on ANY availability/price change.
     target_price: 1000
+    # Safety net: any source price below this is shown but treated as bogus
+    # (typo / bait listing) -- ignored for "cheapest price" and alerts.
+    min_price: 400
     sources:
       - type: shopify
         label: "tado Shop"
@@ -44,16 +47,14 @@ products:
 
   - name: "Be Cool BCPSK12KW (12.000 BTU, WiFi)"
     target_price: 700
+    min_price: 300
     sources:
       - type: jsonld
         label: "OBI"
         url: "https://www.obi.de/p/5152491/be-cool-mobiles-split-klimageraet-bcpsk12kw-mit-wifi-funktion"
-      - type: jsonld
-        label: "bestell.bar"
-        url: "https://www.bestell.bar/p/klJi/be-cool-mobiles-split-klimagerat-bcpsk12kw"
-      - type: jsonld
-        label: "werkzeugbedarf.com"
-        url: "https://www.werkzeugbedarf.com/product/be-cool-mobiles-split-klimageraet-bcpsk12kw-mit-wifi-funktion/"
+      # Removed as untrustworthy:
+      #   bestell.bar    -- obscure shop, no verifiable reputation
+      #   werkzeugbedarf -- 199,99 EUR bait price on an 799 EUR unit
       - type: geizhals
         label: "heise/Geizhals (alle Shops)"
         url: "https://preisvergleich.heise.de/be-cool-mobile-split-klimaanlage-12-000btu-und-wifi-bcpsk12kw-a3519557.html"
