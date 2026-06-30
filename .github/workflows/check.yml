@@ -2,8 +2,9 @@ name: Klima price & stock monitor
 
 on:
   schedule:
-    # every 30 minutes (UTC). GitHub may delay this a few minutes under load.
-    - cron: "*/30 * * * *"
+    # every 15 minutes (UTC). GitHub schedules are best-effort and may be
+    # delayed/skipped under load, so going below ~10 min rarely helps.
+    - cron: "*/15 * * * *"
   workflow_dispatch:        # lets you run it by hand from the Actions tab
     inputs:
       mode:
