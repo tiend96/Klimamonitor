@@ -142,6 +142,8 @@ def parse_jsonld(result: SourceResult, html: str) -> SourceResult:
                 best_status = status
             if price is not None and (best_price is None or price < best_price):
                 best_price = price
+    if best_price is None:
+        best_price = _fallback_price(html)   # shops that don't put price in JSON-LD
     if best_status == "unknown" and best_price is None:
         result.error = "no JSON-LD offer found"
         return result
@@ -149,6 +151,23 @@ def parse_jsonld(result: SourceResult, html: str) -> SourceResult:
     result.price = best_price
     result.currency = currency
     return result
+
+
+def _fallback_price(html: str) -> "float | None":
+    """Find a visible price when JSON-LD has none (OpenGraph / WooCommerce / itemprop)."""
+    patterns = [
+        r'property=["\']product:price:amount["\']\s+content=["\']([\d.,]+)["\']',
+        r'Aktueller Preis ist:\s*([\d.,]+)',                       # WooCommerce sale price
+        r'itemprop=["\']price["\']\s+content=["\']([\d.,]+)["\']',
+        r'class="price"[^>]*>(?:(?!</p>).)*?woocommerce-Price-amount[^<]*<bdi>\s*([\d.,]+)',
+    ]
+    for pat in patterns:
+        m = re.search(pat, html, re.S | re.I)
+        if m:
+            p = _to_price(m.group(1))
+            if p:
+                return p
+    return None
 
 
 # --------------------------------------------------------------------------- #
@@ -193,11 +212,15 @@ def parse_geizhals(result: SourceResult, html: str) -> SourceResult:
         result.error = "could not locate offer marker"
         return result
 
-    # best-effort offer count (aggregator-wide "how many shops sell it")
-    oc = re.search(r'(\d+)\s*Angebote?\b', html)
-    if result.status != "out" and oc:
-        result.note = f"{oc.group(1)} Angebote (alle Shops)"
-    elif result.status == "out":
+    if result.status == "online":
+        # cheapest current offer lives in the "Aktueller Preisbereich" block
+        pm = (re.search(r'id=["\']pricerange-min["\']>\s*<span[^>]*gh_price[^>]*>[^0-9]*([\d.]+,\d{2})', html)
+              or re.search(r'id=["\']pricerange-for["\'][^>]*>\s*um\s*<strong>\s*<span[^>]*gh_price[^>]*>[^0-9]*([\d.]+,\d{2})', html))
+        if pm:
+            result.price = _to_price(pm.group(1))
+        oc = re.search(r'(\d+)\s*Angebote?\b', html)
+        result.note = f"{oc.group(1)} Angebote (alle Shops)" if oc else "Angebote vorhanden"
+    else:
         result.note = "keine Angebote"
     return result
 
