@@ -34,7 +34,7 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1995.0,
+    "best_price": 1217.65,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
@@ -222,7 +222,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1995.0,
+        "price": 1217.65,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
