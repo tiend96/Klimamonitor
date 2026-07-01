@@ -47,6 +47,13 @@
     "deals": [
       {
         "expired": true,
+        "id": "/deals/midea-portasplit-35-kw-12000-btu-wieder-verfugbar-fur-949-eur-aktuell-bei-grz-haustechnik-paypal-moglich-ca-63-tage-lieferzeit-2804761",
+        "price": 949.0,
+        "title": "Midea PortaSplit 3,5 kW (12.000 BTU) wieder verfügbar für 949 € – aktuell bei GRZ Haustechnik (PayPal möglich, ca. 63 Ta",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-35-kw-12000-btu-wieder-verfugbar-fur-949-eur-aktuell-bei-grz-haustechnik-paypal-moglich-ca-63-tage-lieferzeit-2804761"
+      },
+      {
+        "expired": true,
         "id": "/deals/midea-portasplit-cool-3-in-1-klimagerat-portasplit-fur-669eur-statt-899eur-bei-otto-2804112",
         "price": 669.0,
         "title": "Midea PortaSplit Cool 3-in-1 Klimagerät (PortaSplit) für 669€ statt 899€ bei Otto",
@@ -68,17 +75,17 @@
       },
       {
         "expired": true,
-        "id": "/deals/midea-portasplit-12k-bei-globus-baumarkt-forchheim-2802193",
-        "price": null,
-        "title": "Midea Portasplit 12k bei Globus Baumarkt Forchheim",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12k-bei-globus-baumarkt-forchheim-2802193"
-      },
-      {
-        "expired": true,
         "id": "/deals/midea-portasplit-bei-obi-verfugbar-versandkostenfrei-2802019",
         "price": null,
         "title": "Midea PortaSplit bei Obi verfügbar, Versandkostenfrei",
         "url": "https://www.mydealz.de/deals/midea-portasplit-bei-obi-verfugbar-versandkostenfrei-2802019"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-12k-bei-globus-baumarkt-forchheim-2802193",
+        "price": null,
+        "title": "Midea Portasplit 12k bei Globus Baumarkt Forchheim",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12k-bei-globus-baumarkt-forchheim-2802193"
       },
       {
         "expired": true,
@@ -198,13 +205,6 @@
         "price": null,
         "title": "Verfügbar: Midea Portasplit 12.000 BTU Lokal Dietzenbach",
         "url": "https://www.mydealz.de/deals/midea-portasplit-lokal-dietzenbach-2786064"
-      },
-      {
-        "expired": true,
-        "id": "/deals/lokal-hornbach-midea-portasplit-35-kw-2786114",
-        "price": null,
-        "title": "Lokal Hornbach Raum Frankfurt, Darmstadt - Klimasplitgerät Midea PortaSplit 3,5 kW",
-        "url": "https://www.mydealz.de/deals/lokal-hornbach-midea-portasplit-35-kw-2786114"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
