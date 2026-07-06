@@ -34,19 +34,19 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1549.19,
+    "best_price": 1995.0,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 0,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
       {
-        "expired": false,
+        "expired": true,
         "id": "/deals/midea-portasplit-12000-btu-35-kw-split-klimaanlage-ab-0607-fur-nur-749-eur-statt-uvp-1199-eur-lokal-munchen-schwaben-oberbayern-2806990",
         "price": 749.0,
         "title": "Midea PortaSplit 12000 BTU (3,5 kW) Split-Klimaanlage – ab 09.07. für nur 749 € (statt UVP 1.199 €) | Lokal: München, Sc",
@@ -222,7 +222,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1549.19,
+        "price": 1995.0,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
