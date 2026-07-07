@@ -47,6 +47,13 @@
     "deals": [
       {
         "expired": true,
+        "id": "/deals/midea-klimaanlage-portasplit-12000-btu-2807761",
+        "price": null,
+        "title": "Midea Klimaanlage PortaSplit 12000 BTU (Hagebau App)",
+        "url": "https://www.mydealz.de/deals/midea-klimaanlage-portasplit-12000-btu-2807761"
+      },
+      {
+        "expired": true,
         "id": "/deals/midea-portasplit-12000-btu-35-kw-split-klimaanlage-ab-0607-fur-nur-749-eur-statt-uvp-1199-eur-lokal-munchen-schwaben-oberbayern-2806990",
         "price": 749.0,
         "title": "Midea PortaSplit 12000 BTU (3,5 kW) Split-Klimaanlage – ab 09.07. für nur 749 € (statt UVP 1.199 €) | Lokal: München, Sc",
@@ -198,13 +205,6 @@
         "price": null,
         "title": "[Amazon] Midea PortaSplit-E - Mobile Split Klimaanlage - 12000 BTU 3,5kW - Lieferung zum Aufstellungsort",
         "url": "https://www.mydealz.de/deals/amazon-midea-portasplit-e-mobile-split-klimaanlage-12000-btu-35kw-2786760"
-      },
-      {
-        "expired": true,
-        "id": "/deals/klimaanlage-klimasplitgerat-midea-portasplit-12000-btu-lokal-berlin-weissensee-671eur-minus-7-mit-cb-2786625",
-        "price": 671.0,
-        "title": "Klimaanlage / Klimasplitgerät Midea PortaSplit 12.000 BTU (lokal, Berlin Weißensee) (671€ minus 7% mit CB)",
-        "url": "https://www.mydealz.de/deals/klimaanlage-klimasplitgerat-midea-portasplit-12000-btu-lokal-berlin-weissensee-671eur-minus-7-mit-cb-2786625"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
