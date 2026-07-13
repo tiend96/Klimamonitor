@@ -34,7 +34,7 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1649.99,
+    "best_price": 1639.98,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
@@ -117,17 +117,17 @@
       },
       {
         "expired": true,
-        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
-        "price": null,
-        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
-        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
-      },
-      {
-        "expired": true,
         "id": "/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095",
         "price": null,
         "title": "Lokal Globus Bergkamen - Midea Portasplit Klimaanlage verfügbar",
         "url": "https://www.mydealz.de/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095"
+      },
+      {
+        "expired": true,
+        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
+        "price": null,
+        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
+        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
       },
       {
         "expired": true,
@@ -215,7 +215,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1649.99,
+        "price": 1639.98,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
