@@ -34,7 +34,7 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1685.9,
+    "best_price": 1684.59,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
@@ -45,6 +45,13 @@
       }
     ],
     "deals": [
+      {
+        "expired": true,
+        "id": "/deals/verfugbarkeit-midea-portasplit-12000-btu-im-obi-versand-2810571",
+        "price": null,
+        "title": "[Verfügbarkeit] Midea PortaSplit 12000 BTU im Obi Versand",
+        "url": "https://www.mydealz.de/deals/verfugbarkeit-midea-portasplit-12000-btu-im-obi-versand-2810571"
+      },
       {
         "expired": true,
         "id": "/deals/lokal-ettlingen-midea-split-klimaanlage-portasplit-fur-749-eur-zur-neueroffnung-2808635",
@@ -191,13 +198,6 @@
         "price": null,
         "title": "MIDEA PortaSplit 3,5 kW Mobile Split Klimaanlage - Shoop 30% Cashback",
         "url": "https://www.mydealz.de/deals/midea-portasplit-2788149"
-      },
-      {
-        "expired": true,
-        "id": "/deals/tpg-hornbach-midea-portasplit-12000-btu-105-m3-weiss-klimasplitgerat-all-in-one-keine-montage-installation-notwendig-2788547",
-        "price": null,
-        "title": "TPG Hornbach: Midea PortaSplit 12.000 BTU 105 m³ weiß | Klimasplitgerät All-in-One | Keine Montage / Installation notwen",
-        "url": "https://www.mydealz.de/deals/tpg-hornbach-midea-portasplit-12000-btu-105-m3-weiss-klimasplitgerat-all-in-one-keine-montage-installation-notwendig-2788547"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
@@ -215,7 +215,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1685.9,
+        "price": 1684.59,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
