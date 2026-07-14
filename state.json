@@ -39,12 +39,19 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 0,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
+      {
+        "expired": false,
+        "id": "/deals/midea-portasplit-12000-2811410",
+        "price": null,
+        "title": "Lokal Herzogenrath / Midea Portasplit 12.000",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-2811410"
+      },
       {
         "expired": true,
         "id": "/deals/midea-portasplit-12000-lokal-toom-stahnsdorf-umland-berlin-2811167",
@@ -198,13 +205,6 @@
         "price": 712.79,
         "title": "OBI Biber-Bonus-Wochen 10%: Midea PortaSplit 12.000 BTU 105 m³ weiß | Klimasplitgerät All-in-One | Lokal 712,79€",
         "url": "https://www.mydealz.de/deals/midea-portasplit-obi-biber-bonus-wochen-10-2789884"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-2788149",
-        "price": null,
-        "title": "MIDEA PortaSplit 3,5 kW Mobile Split Klimaanlage - Shoop 30% Cashback",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-2788149"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
