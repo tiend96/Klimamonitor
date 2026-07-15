@@ -39,14 +39,14 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 0,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
       {
-        "expired": false,
+        "expired": true,
         "id": "/deals/midea-portasplit-12000-2811410",
         "price": null,
         "title": "Lokal Herzogenrath / Midea Portasplit 12.000",
@@ -138,17 +138,17 @@
       },
       {
         "expired": true,
-        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
-        "price": null,
-        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
-        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
-      },
-      {
-        "expired": true,
         "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
         "price": null,
         "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
+      },
+      {
+        "expired": true,
+        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
+        "price": null,
+        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
+        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
       },
       {
         "expired": true,
