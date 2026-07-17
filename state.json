@@ -47,6 +47,20 @@
     "deals": [
       {
         "expired": true,
+        "id": "/deals/mediamarkt-verfugbarkeitsdeal-midea-portasplit-klimaanlage-12000-btu-2812891",
+        "price": null,
+        "title": "[MediaMarkt] Verfügbarkeitsdeal - Midea PortaSplit Klimaanlage 12.000 BTU",
+        "url": "https://www.mydealz.de/deals/mediamarkt-verfugbarkeitsdeal-midea-portasplit-klimaanlage-12000-btu-2812891"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-split-klimaanlage-mondweiss-max-raumgrosse-105-m3-eek-a-2812888",
+        "price": null,
+        "title": "MIDEA PortaSplit Split Klimaanlage Mondweiß (Max. Raumgröße: 105 m³, EEK: A++)",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-split-klimaanlage-mondweiss-max-raumgrosse-105-m3-eek-a-2812888"
+      },
+      {
+        "expired": true,
         "id": "/deals/midea-portasplit-12000-2811410",
         "price": null,
         "title": "Lokal Herzogenrath / Midea Portasplit 12.000",
@@ -191,20 +205,6 @@
         "price": 749.0,
         "title": "Midea PortaSplit 12.000 BTU (3,5 kW) | Toom 749 € → effektiv 696,57 € mit 7%-Corporate-Benefits-Toom-Gutscheinen.",
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-35-kw-toom-749-eur-effektiv-69657-eur-mit-7-corporate-benefits-toom-gutscheinen-2794550"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-12000-btu-globus-hofheim-2790385",
-        "price": null,
-        "title": "Midea Portasplit 12.000 BTU (Globus Baumarkt)",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-globus-hofheim-2790385"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-obi-biber-bonus-wochen-10-2789884",
-        "price": 712.79,
-        "title": "OBI Biber-Bonus-Wochen 10%: Midea PortaSplit 12.000 BTU 105 m³ weiß | Klimasplitgerät All-in-One | Lokal 712,79€",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-obi-biber-bonus-wochen-10-2789884"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
