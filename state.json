@@ -34,19 +34,19 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1284.0,
+    "best_price": 1278.5,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 0,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
       {
-        "expired": false,
+        "expired": true,
         "id": "/deals/midea-portasplit-mobile-klimaanlage-heizung-12000-btu-35kw-neu-mwst-ausweisbar-2813801",
         "price": null,
         "title": "MIDEA PortaSplit Mobile Klimaanlage Heizung 12000 BTU 3,5kW NEU MwSt ausweisbar",
@@ -145,20 +145,6 @@
       },
       {
         "expired": true,
-        "id": "/deals/midea-portasplit-bei-obi-verfugbar-versandkostenfrei-2802019",
-        "price": null,
-        "title": "Midea PortaSplit bei Obi verfügbar, Versandkostenfrei",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-bei-obi-verfugbar-versandkostenfrei-2802019"
-      },
-      {
-        "expired": true,
-        "id": "/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095",
-        "price": null,
-        "title": "Lokal Globus Bergkamen - Midea Portasplit Klimaanlage verfügbar",
-        "url": "https://www.mydealz.de/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095"
-      },
-      {
-        "expired": true,
         "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
         "price": null,
         "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
@@ -173,10 +159,24 @@
       },
       {
         "expired": true,
+        "id": "/deals/midea-portasplit-bei-obi-verfugbar-versandkostenfrei-2802019",
+        "price": null,
+        "title": "Midea PortaSplit bei Obi verfügbar, Versandkostenfrei",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-bei-obi-verfugbar-versandkostenfrei-2802019"
+      },
+      {
+        "expired": true,
         "id": "/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983",
         "price": 799.0,
         "title": "Midea PortaSplit 3,5 kW / 12.000 BTU - OBI 799€",
         "url": "https://www.mydealz.de/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983"
+      },
+      {
+        "expired": true,
+        "id": "/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095",
+        "price": null,
+        "title": "Lokal Globus Bergkamen - Midea Portasplit Klimaanlage verfügbar",
+        "url": "https://www.mydealz.de/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095"
       },
       {
         "expired": true,
@@ -229,7 +229,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1284.0,
+        "price": 1278.5,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
