@@ -39,25 +39,25 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 0,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
       {
+        "expired": false,
+        "id": "/deals/mediamarkt-verfugbarkeitsdeal-midea-portasplit-klimaanlage-12000-btu-2812891",
+        "price": null,
+        "title": "[MediaMarkt] Verfügbarkeitsdeal - Midea PortaSplit Klimaanlage 12.000 BTU",
+        "url": "https://www.mydealz.de/deals/mediamarkt-verfugbarkeitsdeal-midea-portasplit-klimaanlage-12000-btu-2812891"
+      },
+      {
         "expired": true,
         "id": "/deals/midea-portasplit-mobile-klimaanlage-heizung-12000-btu-35kw-neu-mwst-ausweisbar-2813801",
         "price": null,
         "title": "MIDEA PortaSplit Mobile Klimaanlage Heizung 12000 BTU 3,5kW NEU MwSt ausweisbar",
         "url": "https://www.mydealz.de/deals/midea-portasplit-mobile-klimaanlage-heizung-12000-btu-35kw-neu-mwst-ausweisbar-2813801"
-      },
-      {
-        "expired": true,
-        "id": "/deals/mediamarkt-verfugbarkeitsdeal-midea-portasplit-klimaanlage-12000-btu-2812891",
-        "price": null,
-        "title": "[MediaMarkt] Verfügbarkeitsdeal - Midea PortaSplit Klimaanlage 12.000 BTU",
-        "url": "https://www.mydealz.de/deals/mediamarkt-verfugbarkeitsdeal-midea-portasplit-klimaanlage-12000-btu-2812891"
       },
       {
         "expired": true,
@@ -159,17 +159,17 @@
       },
       {
         "expired": true,
-        "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
-        "price": null,
-        "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
-      },
-      {
-        "expired": true,
         "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
         "price": null,
         "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
         "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
+        "price": null,
+        "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
       },
       {
         "expired": true,
