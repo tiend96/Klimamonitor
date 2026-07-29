@@ -39,12 +39,19 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 2,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
+      {
+        "expired": false,
+        "id": "/deals/midea-portasplit-12000-btu-bei-toom-baumarkt-2817900",
+        "price": null,
+        "title": "Midea Portasplit 12.000 BTU bei Toom Baumarkt",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-toom-baumarkt-2817900"
+      },
       {
         "expired": false,
         "id": "/deals/joybuy-vorverkauf-midea-portasplit-e-12k-mobile-mini-split-klimaanlage-12000-btu-a-39-db-2817700",
@@ -166,13 +173,6 @@
       },
       {
         "expired": true,
-        "id": "/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095",
-        "price": null,
-        "title": "Lokal Globus Bergkamen - Midea Portasplit Klimaanlage verfügbar",
-        "url": "https://www.mydealz.de/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095"
-      },
-      {
-        "expired": true,
         "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
         "price": null,
         "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
@@ -184,6 +184,13 @@
         "price": null,
         "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
         "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
+      },
+      {
+        "expired": true,
+        "id": "/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095",
+        "price": null,
+        "title": "Lokal Globus Bergkamen - Midea Portasplit Klimaanlage verfügbar",
+        "url": "https://www.mydealz.de/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095"
       },
       {
         "expired": true,
