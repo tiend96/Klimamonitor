@@ -39,7 +39,7 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 2,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
@@ -47,17 +47,17 @@
     "deals": [
       {
         "expired": false,
-        "id": "/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759",
-        "price": null,
-        "title": "Vorbestellung Midea PortaSplit 12000 BTU - Lieferung September/Oktober",
-        "url": "https://www.mydealz.de/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759"
-      },
-      {
-        "expired": false,
         "id": "/deals/joybuy-vorverkauf-midea-portasplit-e-12k-mobile-mini-split-klimaanlage-12000-btu-a-39-db-2817700",
         "price": null,
         "title": "[Joybuy Vorverkauf] Midea PortaSplit-E 12K mobile Mini-Split-Klimaanlage (12000 BTU, A++, 39 dB)",
         "url": "https://www.mydealz.de/deals/joybuy-vorverkauf-midea-portasplit-e-12k-mobile-mini-split-klimaanlage-12000-btu-a-39-db-2817700"
+      },
+      {
+        "expired": true,
+        "id": "/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759",
+        "price": null,
+        "title": "Vorbestellung Midea PortaSplit 12000 BTU - Lieferung September/Oktober",
+        "url": "https://www.mydealz.de/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759"
       },
       {
         "expired": true,
