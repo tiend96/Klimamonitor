@@ -34,17 +34,24 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1399.0,
+    "best_price": 1398.99,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 2,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
+      {
+        "expired": false,
+        "id": "/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759",
+        "price": null,
+        "title": "Vorbestellung Midea PortaSplit 12000 BTU - Lieferung September/Oktober",
+        "url": "https://www.mydealz.de/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759"
+      },
       {
         "expired": false,
         "id": "/deals/joybuy-vorverkauf-midea-portasplit-e-12k-mobile-mini-split-klimaanlage-12000-btu-a-39-db-2817700",
@@ -166,17 +173,17 @@
       },
       {
         "expired": true,
-        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
-        "price": null,
-        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
-        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
-      },
-      {
-        "expired": true,
         "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
         "price": null,
         "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
+      },
+      {
+        "expired": true,
+        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
+        "price": null,
+        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
+        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
       },
       {
         "expired": true,
@@ -205,13 +212,6 @@
         "price": null,
         "title": "Midea PortaSplit-E 12K, tragbarer Mini-Split-Klimaventilator, 12000 BTU, Energieeffizienz A++, Heiz- & Kühlfunktionen, f",
         "url": "https://www.mydealz.de/deals/midea-portasplit-e-12k-tragbarer-mini-split-klimaventilator-12000-btu-energieeffizienz-a-heiz-kuhlfunktionen-fur-raume-bis-105-m3-2797130"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-35kw-ggf-bestpreis-67410eur-durch-top-karte-2794531",
-        "price": null,
-        "title": "Midea PortaSplit 3,5kW - Abholung",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-35kw-ggf-bestpreis-67410eur-durch-top-karte-2794531"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
@@ -229,7 +229,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1399.0,
+        "price": 1398.99,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
