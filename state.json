@@ -34,7 +34,7 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1169.99,
+    "best_price": 1149.95,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
@@ -159,6 +159,13 @@
       },
       {
         "expired": true,
+        "id": "/deals/midea-portasplit-12k-bei-globus-baumarkt-forchheim-2802193",
+        "price": null,
+        "title": "Midea Portasplit 12k bei Globus Baumarkt Forchheim",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12k-bei-globus-baumarkt-forchheim-2802193"
+      },
+      {
+        "expired": true,
         "id": "/deals/midea-portasplit-bei-obi-verfugbar-versandkostenfrei-2802019",
         "price": null,
         "title": "Midea PortaSplit bei Obi verfügbar, Versandkostenfrei",
@@ -173,10 +180,10 @@
       },
       {
         "expired": true,
-        "id": "/deals/midea-portasplit-12k-bei-globus-baumarkt-forchheim-2802193",
+        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
         "price": null,
-        "title": "Midea Portasplit 12k bei Globus Baumarkt Forchheim",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12k-bei-globus-baumarkt-forchheim-2802193"
+        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
+        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
       },
       {
         "expired": true,
@@ -191,13 +198,6 @@
         "price": 799.0,
         "title": "Midea PortaSplit 3,5 kW / 12.000 BTU - OBI 799€",
         "url": "https://www.mydealz.de/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983"
-      },
-      {
-        "expired": true,
-        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
-        "price": null,
-        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
-        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
       },
       {
         "expired": true,
@@ -236,7 +236,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1169.99,
+        "price": 1149.95,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
