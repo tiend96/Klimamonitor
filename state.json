@@ -39,18 +39,18 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 0,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
       {
-        "expired": true,
-        "id": "/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759",
+        "expired": false,
+        "id": "/deals/lokal-leinfelden-e-6-midea-portasplit-verfugbar-bei-obi-2818607",
         "price": null,
-        "title": "Vorbestellung Midea PortaSplit 12000 BTU - Lieferung September/Oktober",
-        "url": "https://www.mydealz.de/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759"
+        "title": "[Lokal Leinfelden-E] 6 Midea PortaSplit verfügbar bei Obi",
+        "url": "https://www.mydealz.de/deals/lokal-leinfelden-e-6-midea-portasplit-verfugbar-bei-obi-2818607"
       },
       {
         "expired": true,
@@ -58,6 +58,13 @@
         "price": null,
         "title": "Midea Portasplit Klimaanlage 12.000 BTU bei Toom Baumarkt",
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-toom-baumarkt-2817900"
+      },
+      {
+        "expired": true,
+        "id": "/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759",
+        "price": null,
+        "title": "Vorbestellung Midea PortaSplit 12000 BTU - Lieferung September/Oktober",
+        "url": "https://www.mydealz.de/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759"
       },
       {
         "expired": true,
@@ -159,27 +166,6 @@
       },
       {
         "expired": true,
-        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
-        "price": null,
-        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
-        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
-        "price": null,
-        "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983",
-        "price": 799.0,
-        "title": "Midea PortaSplit 3,5 kW / 12.000 BTU - OBI 799€",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983"
-      },
-      {
-        "expired": true,
         "id": "/deals/midea-portasplit-bei-obi-verfugbar-versandkostenfrei-2802019",
         "price": null,
         "title": "Midea PortaSplit bei Obi verfügbar, Versandkostenfrei",
@@ -191,6 +177,27 @@
         "price": null,
         "title": "Lokal Globus Bergkamen - Midea Portasplit Klimaanlage verfügbar",
         "url": "https://www.mydealz.de/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
+        "price": null,
+        "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
+      },
+      {
+        "expired": true,
+        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
+        "price": null,
+        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
+        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983",
+        "price": 799.0,
+        "title": "Midea PortaSplit 3,5 kW / 12.000 BTU - OBI 799€",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983"
       },
       {
         "expired": true,
