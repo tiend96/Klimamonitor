@@ -34,24 +34,17 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1192.0,
+    "best_price": 1191.99,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 0,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
-      {
-        "expired": false,
-        "id": "/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759",
-        "price": null,
-        "title": "Vorbestellung Midea PortaSplit 12000 BTU - Lieferung September/Oktober",
-        "url": "https://www.mydealz.de/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759"
-      },
       {
         "expired": true,
         "id": "/deals/lokal-leinfelden-e-6-midea-portasplit-verfugbar-bei-obi-2818607",
@@ -65,6 +58,13 @@
         "price": null,
         "title": "Midea Portasplit Klimaanlage 12.000 BTU bei Toom Baumarkt",
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-toom-baumarkt-2817900"
+      },
+      {
+        "expired": true,
+        "id": "/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759",
+        "price": null,
+        "title": "Vorbestellung Midea PortaSplit 12000 BTU - Lieferung September/Oktober",
+        "url": "https://www.mydealz.de/deals/vorbestellung-midea-portasplit-12000-btu-lieferung-septemberoktober-2817759"
       },
       {
         "expired": true,
@@ -180,17 +180,17 @@
       },
       {
         "expired": true,
-        "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
-        "price": null,
-        "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
-      },
-      {
-        "expired": true,
         "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
         "price": null,
         "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
         "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
+        "price": null,
+        "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
       },
       {
         "expired": true,
@@ -236,7 +236,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1192.0,
+        "price": 1191.99,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
