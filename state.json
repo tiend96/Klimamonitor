@@ -34,17 +34,24 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1191.99,
+    "best_price": 1190.0,
     "best_source": "heise/Geizhals (alle Shops)",
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 0,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
+      {
+        "expired": false,
+        "id": "/deals/midea-portasplit-universalhalterung-2820530",
+        "price": null,
+        "title": "Midea Portasplit Universalhalterung",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-universalhalterung-2820530"
+      },
       {
         "expired": true,
         "id": "/deals/lokal-leinfelden-e-6-midea-portasplit-verfugbar-bei-obi-2818607",
@@ -212,13 +219,6 @@
         "price": 399.5,
         "title": "[lokal] Midea PortaSplit 3,5kw 2. Wahl / B-Ware für 399,50€",
         "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-35kw-2-wahl-b-ware-fur-39950eur-2797002"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-e-12k-tragbarer-mini-split-klimaventilator-12000-btu-energieeffizienz-a-heiz-kuhlfunktionen-fur-raume-bis-105-m3-2797130",
-        "price": null,
-        "title": "Midea PortaSplit-E 12K, tragbarer Mini-Split-Klimaventilator, 12000 BTU, Energieeffizienz A++, Heiz- & Kühlfunktionen, f",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-e-12k-tragbarer-mini-split-klimaventilator-12000-btu-energieeffizienz-a-heiz-kuhlfunktionen-fur-raume-bis-105-m3-2797130"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
@@ -236,7 +236,7 @@
         "error": "",
         "implausible": false,
         "note": "Angebote vorhanden",
-        "price": 1191.99,
+        "price": 1190.0,
         "status": "online",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
