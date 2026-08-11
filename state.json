@@ -39,7 +39,7 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 2,
         "error": "",
         "label": "Mydealz"
       }
@@ -51,6 +51,13 @@
         "price": null,
         "title": "Midea Portasplit Universalhalterung Joybuy",
         "url": "https://www.mydealz.de/deals/midea-portasplit-universalhalterung-2820530"
+      },
+      {
+        "expired": false,
+        "id": "/deals/midea-portasplit-split-klimaanlage-mondweiss-max-raumgrosse-105-m3-eek-a-2812888",
+        "price": null,
+        "title": "MIDEA PortaSplit Split Klimaanlage Mondweiß (Max. Raumgröße: 105 m³, EEK: A++)",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-split-klimaanlage-mondweiss-max-raumgrosse-105-m3-eek-a-2812888"
       },
       {
         "expired": true,
@@ -93,13 +100,6 @@
         "price": null,
         "title": "[MediaMarkt] Verfügbarkeitsdeal - Midea PortaSplit Klimaanlage 12.000 BTU",
         "url": "https://www.mydealz.de/deals/mediamarkt-verfugbarkeitsdeal-midea-portasplit-klimaanlage-12000-btu-2812891"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-split-klimaanlage-mondweiss-max-raumgrosse-105-m3-eek-a-2812888",
-        "price": null,
-        "title": "MIDEA PortaSplit Split Klimaanlage Mondweiß (Max. Raumgröße: 105 m³, EEK: A++)",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-split-klimaanlage-mondweiss-max-raumgrosse-105-m3-eek-a-2812888"
       },
       {
         "expired": true,
