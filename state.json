@@ -39,12 +39,19 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 2,
+        "active": 3,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
+      {
+        "expired": false,
+        "id": "/deals/midea-portasplit-12000btu-2823364",
+        "price": null,
+        "title": "Midea Portasplit 12000BTU [Joybuy, Verfügbarkeitsdeal, lieferung ab 17.08.]",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12000btu-2823364"
+      },
       {
         "expired": false,
         "id": "/deals/midea-portasplit-universalhalterung-2820530",
@@ -58,13 +65,6 @@
         "price": null,
         "title": "MIDEA PortaSplit Split Klimaanlage Mondweiß (Max. Raumgröße: 105 m³, EEK: A++)",
         "url": "https://www.mydealz.de/deals/midea-portasplit-split-klimaanlage-mondweiss-max-raumgrosse-105-m3-eek-a-2812888"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-12000btu-2823364",
-        "price": null,
-        "title": "Midea Portasplit 12000BTU [Joybuy, Verfügbarkeitsdeal, lieferung ab 17.08.]",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12000btu-2823364"
       },
       {
         "expired": true,
