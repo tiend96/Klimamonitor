@@ -34,9 +34,9 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1199.0,
-    "best_source": "tado Shop",
-    "best_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
+    "best_price": 1226.12,
+    "best_source": "heise/Geizhals (alle Shops)",
+    "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
         "active": 1,
@@ -222,7 +222,7 @@
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
-    "sellers": 2,
+    "sellers": 1,
     "sources": {
       "BAUHAUS": {
         "error": "blocked (HTTP 403)",
@@ -253,7 +253,7 @@
         "implausible": false,
         "note": "",
         "price": 1199.0,
-        "status": "online",
+        "status": "out",
         "url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw"
       }
     },
