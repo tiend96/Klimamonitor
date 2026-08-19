@@ -23,20 +23,20 @@
         "url": "https://www.obi.de/p/5152491/be-cool-mobiles-split-klimageraet-bcpsk12kw-mit-wifi-funktion"
       },
       "heise/Geizhals (alle Shops)": {
-        "error": "",
+        "error": "blocked (HTTP 503)",
         "implausible": false,
-        "note": "keine Angebote",
+        "note": "",
         "price": null,
-        "status": "out",
+        "status": "unknown",
         "url": "https://preisvergleich.heise.de/be-cool-mobile-split-klimaanlage-12-000btu-und-wifi-bcpsk12kw-a3519557.html"
       }
     },
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1250.0,
-    "best_source": "heise/Geizhals (alle Shops)",
-    "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
+    "best_price": null,
+    "best_source": null,
+    "best_url": null,
     "deal_feeds": [
       {
         "active": 1,
@@ -222,7 +222,7 @@
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
-    "sellers": 1,
+    "sellers": 0,
     "sources": {
       "BAUHAUS": {
         "error": "blocked (HTTP 403)",
@@ -233,11 +233,11 @@
         "url": "https://www.bauhaus.info/klimaanlagen/midea-klimasplitgeraet-portasplit-12000-btu/p/31934233"
       },
       "heise/Geizhals (alle Shops)": {
-        "error": "",
+        "error": "blocked (HTTP 503)",
         "implausible": false,
-        "note": "Angebote vorhanden",
-        "price": 1250.0,
-        "status": "online",
+        "note": "",
+        "price": null,
+        "status": "unknown",
         "url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html"
       },
       "idealo": {
@@ -257,6 +257,6 @@
         "url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw"
       }
     },
-    "status": "online"
+    "status": "out"
   }
 }
