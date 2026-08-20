@@ -39,7 +39,7 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 2,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
@@ -47,17 +47,17 @@
     "deals": [
       {
         "expired": false,
-        "id": "/deals/midea-portasplit-e-12k-12000-btu-energieeffizienz-a-heiz-kuhlfunktionen-45-kg-6-cashback-85367eur-eff-2827236",
-        "price": 853.67,
-        "title": "Midea PortaSplit-E 12K Klimaanlage (12000 BTU, Energieeffizienz A++, Heiz- & Kühlfunktionen, 45 kg) + 6% Cashback = 853,",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-e-12k-12000-btu-energieeffizienz-a-heiz-kuhlfunktionen-45-kg-6-cashback-85367eur-eff-2827236"
-      },
-      {
-        "expired": false,
         "id": "/deals/midea-portasplit-universalhalterung-2820530",
         "price": null,
         "title": "Midea Portasplit Universalhalterung",
         "url": "https://www.mydealz.de/deals/midea-portasplit-universalhalterung-2820530"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-e-12k-12000-btu-energieeffizienz-a-heiz-kuhlfunktionen-45-kg-6-cashback-85367eur-eff-2827236",
+        "price": 853.67,
+        "title": "Midea PortaSplit-E 12K Klimaanlage (12000 BTU, Energieeffizienz A++, Heiz- & Kühlfunktionen, 45 kg) + 6% Cashback = 853,",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-e-12k-12000-btu-energieeffizienz-a-heiz-kuhlfunktionen-45-kg-6-cashback-85367eur-eff-2827236"
       },
       {
         "expired": true,
