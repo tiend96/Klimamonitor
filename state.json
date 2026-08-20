@@ -39,12 +39,19 @@
     "best_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 2,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
+      {
+        "expired": false,
+        "id": "/deals/midea-portasplit-12000btu-2823364",
+        "price": null,
+        "title": "Midea Portasplit 12000BTU [Joybuy, Verfügbarkeitsdeal, lieferung ab 17.08.]",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-12000btu-2823364"
+      },
       {
         "expired": false,
         "id": "/deals/midea-portasplit-universalhalterung-2820530",
@@ -65,13 +72,6 @@
         "price": null,
         "title": "MIDEA PortaSplit Split Klimaanlage",
         "url": "https://www.mydealz.de/deals/midea-portasplit-split-klimaanlage-2824336"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-12000btu-2823364",
-        "price": null,
-        "title": "Midea Portasplit 12000BTU [Joybuy, Verfügbarkeitsdeal, lieferung ab 17.08.]",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-12000btu-2823364"
       },
       {
         "expired": true,
