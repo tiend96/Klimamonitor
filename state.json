@@ -34,9 +34,9 @@
     "status": "store_only"
   },
   "Midea PortaSplit 12.000 BTU (3,5 kW)": {
-    "best_price": 1250.0,
-    "best_source": "heise/Geizhals (alle Shops)",
-    "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
+    "best_price": 1199.0,
+    "best_source": "tado Shop",
+    "best_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
     "deal_feeds": [
       {
         "active": 1,
@@ -208,21 +208,21 @@
       },
       {
         "expired": true,
-        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
-        "price": null,
-        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
-        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
-      },
-      {
-        "expired": true,
         "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
         "price": null,
         "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
+      },
+      {
+        "expired": true,
+        "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
+        "price": null,
+        "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
+        "url": "https://www.mydealz.de/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
-    "sellers": 1,
+    "sellers": 2,
     "sources": {
       "BAUHAUS": {
         "error": "blocked (HTTP 403)",
@@ -253,7 +253,7 @@
         "implausible": false,
         "note": "",
         "price": 1199.0,
-        "status": "out",
+        "status": "online",
         "url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw"
       }
     },
