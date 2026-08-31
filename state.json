@@ -222,7 +222,7 @@
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
-    "sellers": 2,
+    "sellers": 1,
     "sources": {
       "BAUHAUS": {
         "error": "blocked (HTTP 403)",
@@ -253,7 +253,7 @@
         "implausible": false,
         "note": "",
         "price": 1199.0,
-        "status": "online",
+        "status": "out",
         "url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw"
       }
     },
