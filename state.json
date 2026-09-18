@@ -39,7 +39,7 @@
     "best_url": "https://preisvergleich.heise.de/midea-comfee-porta-split-a3201826.html",
     "deal_feeds": [
       {
-        "active": 2,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
@@ -53,18 +53,18 @@
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000btu-2823364"
       },
       {
-        "expired": false,
-        "id": "/deals/midea-portasplit-universalhalterung-2820530",
-        "price": null,
-        "title": "Midea Portasplit Universalhalterung",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-universalhalterung-2820530"
-      },
-      {
         "expired": true,
         "id": "/deals/midea-portasplit-split-klimaanlage-2824336",
         "price": null,
         "title": "MIDEA PortaSplit Split Klimaanlage",
         "url": "https://www.mydealz.de/deals/midea-portasplit-split-klimaanlage-2824336"
+      },
+      {
+        "expired": true,
+        "id": "/deals/midea-portasplit-universalhalterung-2820530",
+        "price": null,
+        "title": "Midea Portasplit Universalhalterung",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-universalhalterung-2820530"
       },
       {
         "expired": true,
