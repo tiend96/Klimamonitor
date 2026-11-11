@@ -39,12 +39,19 @@
     "best_url": null,
     "deal_feeds": [
       {
-        "active": 0,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
+      {
+        "expired": false,
+        "id": "/deals/midea-portasplit-35-kw-2869048",
+        "price": null,
+        "title": "Midea PortaSplit 3,5 kW Klimaanlage",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-35-kw-2869048"
+      },
       {
         "expired": true,
         "id": "/deals/midea-portasplit-split-klimaanlage-2824336",
@@ -187,13 +194,6 @@
       },
       {
         "expired": true,
-        "id": "/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095",
-        "price": null,
-        "title": "Lokal Globus Bergkamen - Midea Portasplit Klimaanlage verfügbar",
-        "url": "https://www.mydealz.de/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095"
-      },
-      {
-        "expired": true,
         "id": "/deals/lokal-midea-portasplit-im-globus-baumarkt-achern-2802320",
         "price": null,
         "title": "[lokal] Midea PortaSplit 12k BTU mit Heizfunktion im Globus Baumarkt Achern",
@@ -201,17 +201,17 @@
       },
       {
         "expired": true,
+        "id": "/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095",
+        "price": null,
+        "title": "Lokal Globus Bergkamen - Midea Portasplit Klimaanlage verfügbar",
+        "url": "https://www.mydealz.de/deals/lokal-bergkamen-mieda-portasplit-verfugbar-2802095"
+      },
+      {
+        "expired": true,
         "id": "/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965",
         "price": null,
         "title": "Midea Portasplit 12000 BTU bei Amazon verfügbar",
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000-btu-bei-amazon-verfugbar-2801965"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983",
-        "price": 799.0,
-        "title": "Midea PortaSplit 3,5 kW / 12.000 BTU - OBI 799€",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-35-kw-12000-btu-obi-799eur-2801983"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
