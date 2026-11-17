@@ -23,7 +23,7 @@
         "url": "https://www.obi.de/p/5152491/be-cool-mobiles-split-klimageraet-bcpsk12kw-mit-wifi-funktion"
       },
       "heise/Geizhals (alle Shops)": {
-        "error": "could not locate offer marker",
+        "error": "blocked (HTTP 429)",
         "implausible": false,
         "note": "",
         "price": null,
