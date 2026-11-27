@@ -39,14 +39,21 @@
     "best_url": null,
     "deal_feeds": [
       {
-        "active": 1,
+        "active": 0,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
       {
-        "expired": false,
+        "expired": true,
+        "id": "/deals/midea-portasplit-35kw-bei-obi-2883356",
+        "price": null,
+        "title": "Midea PortaSplit 3.5kw bei OBI",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-35kw-bei-obi-2883356"
+      },
+      {
+        "expired": true,
         "id": "/deals/midea-portasplit-e-12k-mobile-split-klimaanlage-12000-btu-a-heizfunktion-2883107",
         "price": null,
         "title": "Midea PortaSplit-E 12K | mobile Split-Klimaanlage, 12.000 BTU, A++, Heizfunktion",
@@ -58,13 +65,6 @@
         "price": null,
         "title": "Midea Portasplit 12000BTU",
         "url": "https://www.mydealz.de/deals/midea-portasplit-12000btu-2872600"
-      },
-      {
-        "expired": true,
-        "id": "/deals/midea-portasplit-35-kw-2869048",
-        "price": null,
-        "title": "Midea PortaSplit 3,5 kW Klimaanlage",
-        "url": "https://www.mydealz.de/deals/midea-portasplit-35-kw-2869048"
       }
     ],
     "primary_url": "https://shop.tado.com/products/midea-portasplit-mobile-split-air-conditioner-3-5-kw",
