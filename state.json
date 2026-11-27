@@ -39,12 +39,19 @@
     "best_url": null,
     "deal_feeds": [
       {
-        "active": 0,
+        "active": 1,
         "error": "",
         "label": "Mydealz"
       }
     ],
     "deals": [
+      {
+        "expired": false,
+        "id": "/deals/midea-portasplit-e-12k-mobile-split-klimaanlage-12000-btu-a-heizfunktion-2883107",
+        "price": null,
+        "title": "Midea PortaSplit-E 12K | mobile Split-Klimaanlage, 12.000 BTU, A++, Heizfunktion",
+        "url": "https://www.mydealz.de/deals/midea-portasplit-e-12k-mobile-split-klimaanlage-12000-btu-a-heizfunktion-2883107"
+      },
       {
         "expired": true,
         "id": "/deals/midea-portasplit-12000btu-2872600",
